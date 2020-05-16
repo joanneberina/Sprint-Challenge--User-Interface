@@ -71,6 +71,33 @@ p {
     margin: 0 auto;
 }
 
+/* header */
+header {
+    padding-bottom: 24px;
+  }
+  
+  header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    font-size: 14px;
+  }
+  
+  header ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 48px;
+  }
+  
+  header ul a {
+    text-decoration: none;
+    color: black;
+  }  
+
+/* top content */
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -95,6 +122,53 @@ p {
     margin-bottom: 0;
 }
 
+/* colors */
+.teal {
+    background: teal;
+}
+
+.gold {
+    background: gold;
+}
+
+.cadetblue {
+    background: cadetblue;
+}
+
+.coral {
+    background: coral;
+}
+
+.crimson {
+    background: crimson;
+}
+
+.forestgreen {
+    background: forestgreen;
+}
+
+.darkorchid {
+    background: darkorchid;
+}
+
+.cadetblue {
+    background: cadetblue;
+}
+
+.hotpink {
+    background: hotpink;
+}
+
+.indigo {
+    background: indigo;
+}
+
+.dodgerblue {
+    background: dodgerblue;
+}
+
+
+/* middle-content */
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -104,7 +178,6 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -143,4 +216,34 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+/* Media Query */
+@media (max-width: 500px) {
+
+    header, nav {
+        flex-direction: column;
+    }
+
+    header ul {
+        flex-direction: column;
+        margin: 2rem 0;
+    }
+
+    header ul a {
+        font-size: 2rem;
+        padding-right: 0;
+        padding-bottom: 1rem;
+    }
+
+    .responsive {
+        width: 100%;
+        height: auto;
+    }
+
+    /* top content */
+    .top-content {
+        flex-direction: column;
+    }
 }
